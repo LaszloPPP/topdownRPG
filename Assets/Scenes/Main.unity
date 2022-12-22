@@ -2210,7 +2210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9074635524910434811, guid: 7249b41f0cd0e7f45af865b6445be809, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2683555
+      value: 0.2765469
       objectReference: {fileID: 0}
     - target: {fileID: 9074635524910434811, guid: 7249b41f0cd0e7f45af865b6445be809, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10691,6 +10691,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496465b3474a77542a15d32c6a8853da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSprites: []
+  weaponSprites: []
+  weaponPrices: 
+  xpTable: 
+  player: {fileID: 0}
+  money: 0
+  experience: 0
 --- !u!4 &1557526250
 Transform:
   m_ObjectHideFlags: 0
