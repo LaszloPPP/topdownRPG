@@ -27,14 +27,14 @@ public class CharacterMenu : MonoBehaviour
             }
             OnSelectionChanged();
         }
-        else 
+        else
         {
             currentCharacterSelection--;
 
             //if we went too far away in character sprites go back to 0
-            if (currentCharacterSelection <0)
+            if (currentCharacterSelection < 0)
             {
-                currentCharacterSelection = GameManager.instance.playerSprites.Count-1;
+                currentCharacterSelection = GameManager.instance.playerSprites.Count - 1;
             }
             OnSelectionChanged();
         }
@@ -43,6 +43,7 @@ public class CharacterMenu : MonoBehaviour
     private void OnSelectionChanged()
     {
         characterSelectionSprite.sprite = GameManager.instance.playerSprites[currentCharacterSelection];
+        GameManager.instance.player.SwapSprite(currentCharacterSelection);
     }
 
     //weapon upgre
@@ -71,10 +72,29 @@ public class CharacterMenu : MonoBehaviour
         //meta
         hitpointText.text = GameManager.instance.player.hitPoint.ToString();
         moneyText.text = GameManager.instance.money.ToString();
-        levelText.text = "Not implemented yet";
+        levelText.text = GameManager.instance.GetCurrentLevel().ToString();
         //xp bar
-        xpText.text = "Not implemented yet";
-        xpBar.localScale = new Vector3(0.5f, 0, 0);
+
+        int currLevel = GameManager.instance.GetCurrentLevel();
+
+        if (currLevel == GameManager.instance.xpTable.Count) //check if at max xp level
+        {
+            xpText.text = GameManager.instance.experience.ToString() + " total experience points";
+            xpBar.localScale = Vector3.one;
+        }
+        else
+        {
+            int prevLevelXp = GameManager.instance.GetXpToLevel(currLevel - 1);
+            int currLevelXp = GameManager.instance.GetXpToLevel(currLevel);
+
+            int diff = currLevelXp - prevLevelXp;
+            int currXpIntoLevel = GameManager.instance.experience - prevLevelXp;
+
+            float completionRatio= (float)currXpIntoLevel/(float)diff;
+            xpBar.localScale = new Vector3(completionRatio, 1, 1);
+            xpText.text = currXpIntoLevel.ToString() + " / " + diff;
+        }
+        
     }
 
 }

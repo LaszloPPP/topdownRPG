@@ -61,6 +61,38 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    //experience system
+    public int GetCurrentLevel()
+    {
+        int currentLevel = 0;
+        int add = 0;
+
+        while (experience >= add)
+        {
+            add += xpTable[currentLevel];
+            currentLevel++;
+
+            if (currentLevel == xpTable.Count) //check if max level
+            {
+                return currentLevel;
+            }
+        }
+
+        return currentLevel;
+    }
+
+    public int GetXpToLevel(int level) //total xp to reach a certain "level"
+    {
+        int r = 0;
+        int xp = 0;
+        while (r < level)
+        {
+            xp += xpTable[r];
+            r++;
+        }
+        return xp;
+    }
+
     //save state
     /* what do we need to save?
      * INT preferredSkin

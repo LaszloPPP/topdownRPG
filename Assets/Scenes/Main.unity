@@ -3245,7 +3245,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 502126363}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 449275430}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &502126363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12671,7 +12683,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1441304683}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 449275430}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1441304683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12916,7 +12940,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 496465b3474a77542a15d32c6a8853da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSprites: []
+  playerSprites:
+  - {fileID: -216467234, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
+  - {fileID: 2142664501, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
   weaponSprites:
   - {fileID: -1256082617, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
   - {fileID: 1771932696, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
@@ -12927,7 +12953,7 @@ MonoBehaviour:
   - {fileID: -2033617980, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
   - {fileID: -96696632, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
   weaponPrices: 00000000010000000200000003000000040000000500000006000000
-  xpTable: 
+  xpTable: 050000000f00000011000000190000001e0000002b00000037000000440000005100000064000000
   player: {fileID: 1866146303}
   weapon: {fileID: 955196813}
   floatingTextManager: {fileID: 456697733}
