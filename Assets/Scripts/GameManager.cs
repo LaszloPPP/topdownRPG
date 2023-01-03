@@ -93,6 +93,21 @@ public class GameManager : MonoBehaviour
         return xp;
     }
 
+    public void GrantXp(int xp)
+    {
+        int currLevel = GetCurrentLevel();
+        experience += xp;
+        if (currLevel < GetCurrentLevel())
+        {
+            OnLevelUp();
+        }
+    }
+
+    public void OnLevelUp()
+    {
+        player.OnLevelUp();
+    }
+
     //save state
     /* what do we need to save?
      * INT preferredSkin
@@ -109,7 +124,7 @@ public class GameManager : MonoBehaviour
         s += experience.ToString() + "|";
         s += weapon.weaponLevel.ToString();
 
-        PlayerPrefs.SetString("SaveSate",s);
+        PlayerPrefs.SetString("SaveSate", s);
     }
 
     public void LoadState(Scene s, LoadSceneMode mode)
@@ -122,9 +137,22 @@ public class GameManager : MonoBehaviour
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
         //change player skin
         money = int.Parse(data[1]);
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+
+
+        //xp + level check
         experience = int.Parse(data[2]);
+        if (GetCurrentLevel() != 1)
+        {
+            player.SetLevel(GetCurrentLevel());
+        }
+
+        //weapon level
         weapon.SetWeaponLevel(int.Parse(data[3]));
-        
+
+        //spawnpoint
+        //player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+
     }
 
 }
