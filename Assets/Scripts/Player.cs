@@ -15,17 +15,17 @@ public class Player : Mover
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
         //own code--------------
-        transform.position = GameObject.Find("SpawnPoint").transform.position;
 
 
         if (Player.instance != null)
         {
             Destroy(gameObject);
-            return; //code creates a game manager object in every scene we enter. if we return to the Main scene where there is already a game manager it will
+            return; //code creates a player object in every scene we enter. if we return to the Main scene where there is already a game manager it will
             //be duplicated. this IF check if it!s already there and destroyz one
         }
 
         instance = this;
+        transform.position = GameObject.Find("SpawnPoint").transform.position;
 
         //own code--------------
         DontDestroyOnLoad(gameObject);

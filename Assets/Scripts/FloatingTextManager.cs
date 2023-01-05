@@ -19,7 +19,7 @@ public class FloatingTextManager : MonoBehaviour
         if (FloatingTextManager.instance != null)
         {
             Destroy(gameObject);
-            return; //code creates a game manager object in every scene we enter. if we return to the Main scene where there is already a game manager it will
+            return; //code creates a floating text manager object in every scene we enter. if we return to the Main scene where there is already a game manager it will
             //be duplicated. this IF check if it!s already there and destroyz one
         }
 

@@ -159,7 +159,7 @@ public class GameManager : MonoBehaviour
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
         //spawnpoint
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+        //player.transform.position = GameObject.Find("SpawnPoint").transform.position;
 
     }
 
