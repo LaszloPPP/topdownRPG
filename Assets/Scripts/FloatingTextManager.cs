@@ -7,8 +7,26 @@ public class FloatingTextManager : MonoBehaviour
 {
     public GameObject textContainer;
     public GameObject textPrefab;
+    //own code--------------
+    public static FloatingTextManager instance;
+    //own code--------------
 
     private List<FloatingText> floatingTexts = new List<FloatingText>();
+
+    private void Start()
+    {
+        //own code--------------
+        if (FloatingTextManager.instance != null)
+        {
+            Destroy(gameObject);
+            return; //code creates a game manager object in every scene we enter. if we return to the Main scene where there is already a game manager it will
+            //be duplicated. this IF check if it!s already there and destroyz one
+        }
+
+        instance = this;
+        //own code--------------
+        DontDestroyOnLoad(gameObject);
+    }
 
     private void Update()
     {

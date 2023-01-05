@@ -17,8 +17,17 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);        
     }
+
+    
+    //own code--------------
+    private void Update()
+    {
+        Debug.Log("Player position: " + player.transform.position + "SpawnPoint position: " + GameObject.Find("SpawnPoint").transform.position);
+    }
+    //own code--------------
+
     //resources
     public List<Sprite> playerSprites;
     public List<Sprite> weaponSprites;
@@ -27,6 +36,7 @@ public class GameManager : MonoBehaviour
 
     //references
     public Player player;
+    
 
     //public weapons
     public Weapon weapon;
@@ -137,8 +147,6 @@ public class GameManager : MonoBehaviour
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
         //change player skin
         money = int.Parse(data[1]);
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
-
 
         //xp + level check
         experience = int.Parse(data[2]);
@@ -151,7 +159,7 @@ public class GameManager : MonoBehaviour
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
         //spawnpoint
-        //player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
 
     }
 
