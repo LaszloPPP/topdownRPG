@@ -13,7 +13,7 @@ public class Player : Mover
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
         //transform.position = GameObject.FindGameObjectWithTag("Respawn").transform.position;
-        //transform.position = GameObject.Find("SP").transform.position;
+        //transform.position = GameObject.Find("SpawnPoint").transform.position;
 
         DontDestroyOnLoad(gameObject);
 
@@ -25,11 +25,7 @@ public class Player : Mover
         float y = Input.GetAxisRaw("Vertical");
 
         UpdateMotor(new Vector3(x, y, 0));
-        /*
-        //own code--------------
-        Debug.Log("Spawnpoit location according to Player" + GameObject.Find("SpawnPoint").transform.position);
-        //own code--------------
-        */
+        
 
     }
 

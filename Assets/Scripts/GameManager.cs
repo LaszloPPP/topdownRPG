@@ -157,7 +157,7 @@ public class GameManager : MonoBehaviour
 
         //spawnpoint
         //player.transform.position = GameObject.FindGameObjectWithTag("Respawn").transform.position;
-        player.transform.position = GameObject.Find("SP").transform.position;
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
 
 
 

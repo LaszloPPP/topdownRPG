@@ -11367,11 +11367,11 @@ GameObject:
   m_Component:
   - component: {fileID: 951116938}
   m_Layer: 0
-  m_Name: SP
+  m_Name: SpawnPoint
   m_TagString: Respawn
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &951116938
 Transform:
