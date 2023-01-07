@@ -6,28 +6,15 @@ using UnityEngine;
 public class Player : Mover
 {
     private SpriteRenderer spriteRenderer;
-    //own code--------------
-    public static Player instance;
-    //own code--------------
+    
 
     protected override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        //own code--------------
+        //transform.position = GameObject.FindGameObjectWithTag("Respawn").transform.position;
+        //transform.position = GameObject.Find("SP").transform.position;
 
-
-        if (Player.instance != null)
-        {
-            Destroy(gameObject);
-            return; //code creates a player object in every scene we enter. if we return to the Main scene where there is already a game manager it will
-            //be duplicated. this IF check if it!s already there and destroyz one
-        }
-
-        instance = this;
-        transform.position = GameObject.Find("SpawnPoint").transform.position;
-
-        //own code--------------
         DontDestroyOnLoad(gameObject);
 
     }
@@ -38,9 +25,11 @@ public class Player : Mover
         float y = Input.GetAxisRaw("Vertical");
 
         UpdateMotor(new Vector3(x, y, 0));
+        /*
         //own code--------------
         Debug.Log("Spawnpoit location according to Player" + GameObject.Find("SpawnPoint").transform.position);
         //own code--------------
+        */
 
     }
 

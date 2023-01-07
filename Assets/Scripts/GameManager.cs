@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
         if (GameManager.instance != null)
         {
             Destroy(gameObject);
+            Destroy(player.gameObject);
+            Destroy(floatingTextManager.gameObject);
             return; //code creates a game manager object in every scene we enter. if we return to the Main scene where there is already a game manager it will
             //be duplicated. this IF check if it!s already there and destroyz one
         }
@@ -21,12 +23,6 @@ public class GameManager : MonoBehaviour
     }
 
     
-    //own code--------------
-    private void Update()
-    {
-        Debug.Log("Player position: " + player.transform.position + "SpawnPoint position: " + GameObject.Find("SpawnPoint").transform.position);
-    }
-    //own code--------------
 
     //resources
     public List<Sprite> playerSprites;
@@ -143,6 +139,7 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+        
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
         //change player skin
@@ -159,7 +156,10 @@ public class GameManager : MonoBehaviour
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
         //spawnpoint
-        //player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+        //player.transform.position = GameObject.FindGameObjectWithTag("Respawn").transform.position;
+        player.transform.position = GameObject.Find("SP").transform.position;
+
+
 
     }
 
