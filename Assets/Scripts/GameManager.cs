@@ -19,10 +19,8 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);        
+        DontDestroyOnLoad(gameObject);
     }
-
-    
 
     //resources
     public List<Sprite> playerSprites;
@@ -154,13 +152,7 @@ public class GameManager : MonoBehaviour
 
         //weapon level
         weapon.SetWeaponLevel(int.Parse(data[3]));
-
-        //spawnpoint
-        //player.transform.position = GameObject.FindGameObjectWithTag("Respawn").transform.position;
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
-
-
-
+                
     }
 
 }

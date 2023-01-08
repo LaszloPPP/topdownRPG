@@ -6,14 +6,12 @@ using UnityEngine;
 public class Player : Mover
 {
     private SpriteRenderer spriteRenderer;
-    
+
 
     protected override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        //transform.position = GameObject.FindGameObjectWithTag("Respawn").transform.position;
-        //transform.position = GameObject.Find("SpawnPoint").transform.position;
 
         DontDestroyOnLoad(gameObject);
 
@@ -25,7 +23,7 @@ public class Player : Mover
         float y = Input.GetAxisRaw("Vertical");
 
         UpdateMotor(new Vector3(x, y, 0));
-        
+
 
     }
 
@@ -46,5 +44,21 @@ public class Player : Mover
         {
             OnLevelUp();
         }
+    }
+
+    public void Heal(int healingAmount)
+    {
+        if (hitPoint == maxHitPoint)
+        {
+            return;
+        }
+
+        hitPoint += healingAmount;
+        if (hitPoint > maxHitPoint)
+        {
+            hitPoint = maxHitPoint;
+        }
+        GameManager.instance.ShowText("+" + healingAmount.ToString() + "hp", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
+
     }
 }

@@ -12,6 +12,7 @@ public class Portal : Collidable
             GameManager.instance.SaveState();
             string goToScene = sceneNames[Random.Range(0, sceneNames.Length)];
             UnityEngine.SceneManagement.SceneManager.LoadScene(goToScene);
+            //GameManager.instance.player.transform.position= GameObject.Find("SpawnPoint").transform.position;
         }
     }
 }
