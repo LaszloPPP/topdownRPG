@@ -13,13 +13,16 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             Destroy(player.gameObject);
             Destroy(floatingTextManager.gameObject);
+            Destroy(hud.gameObject);
+            Destroy(menu.gameObject);
             return; //code creates a game manager object in every scene we enter. if we return to the Main scene where there is already a game manager it will
             //be duplicated. this IF check if it!s already there and destroyz one
         }
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject); - put in dontdestroy.cs
+        //DontDestroyOnLoad(hitpointBar.gameObject); - put in dontdestroy.cs
     }
 
     //resources
@@ -30,13 +33,12 @@ public class GameManager : MonoBehaviour
 
     //references
     public Player player;
-    
-
-    //public weapons
     public Weapon weapon;
-
-    //floating text
     public FloatingTextManager floatingTextManager;
+    public RectTransform hitpointBar;
+    public GameObject hud;
+    public GameObject menu;
+
 
     //logic
     public int money;
@@ -63,6 +65,13 @@ public class GameManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    //healthbar
+    public void OnHitPointChange()
+    {
+        float ratio = (float)player.hitPoint / (float)player.maxHitPoint;
+        hitpointBar.localScale = new Vector3(1, ratio, 1);
     }
 
     //experience system
@@ -137,7 +146,7 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
-        
+
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
         //change player skin
@@ -152,7 +161,7 @@ public class GameManager : MonoBehaviour
 
         //weapon level
         weapon.SetWeaponLevel(int.Parse(data[3]));
-                
+
     }
 
 }

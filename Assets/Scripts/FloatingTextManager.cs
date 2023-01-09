@@ -14,10 +14,10 @@ public class FloatingTextManager : MonoBehaviour
     
     private void Start()
     {
-        
-        DontDestroyOnLoad(gameObject);
+
+        //DontDestroyOnLoad(gameObject); - put in dontdestroy.cs
     }
-    
+
 
     private void Update()
     {
