@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
+        //SceneManager.sceneLoaded += OnSceneLoaded;
         //DontDestroyOnLoad(gameObject); - put in dontdestroy.cs
         //DontDestroyOnLoad(hitpointBar.gameObject); - put in dontdestroy.cs
     }
@@ -119,7 +120,15 @@ public class GameManager : MonoBehaviour
     public void OnLevelUp()
     {
         player.OnLevelUp();
+        OnHitPointChange();
     }
+
+    //on scene loaded
+    public void OnSceneLoaded(Scene s, LoadSceneMode mode)
+    {
+        player.transform.position = GameObject.Find("Spawnpoint").transform.position;
+    }
+
 
     //save state
     /* what do we need to save?
@@ -142,6 +151,9 @@ public class GameManager : MonoBehaviour
 
     public void LoadState(Scene s, LoadSceneMode mode)
     {
+
+        SceneManager.sceneLoaded -= LoadState;
+
         if (!PlayerPrefs.HasKey("SaveState"))
         {
             return;
