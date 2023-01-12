@@ -135,6 +135,7 @@ public class GameManager : MonoBehaviour
     {
         deathMenuAnim.SetTrigger("Hide");
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+        player.Respawn();
     }
 
     //save state
