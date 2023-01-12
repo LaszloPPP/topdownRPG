@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
     public RectTransform hitpointBar;
+    public Animator deathMenuAnim;
     public GameObject hud;
     public GameObject menu;
 
@@ -129,6 +130,12 @@ public class GameManager : MonoBehaviour
         player.transform.position = GameObject.Find("Spawnpoint").transform.position;
     }
 
+    //death menu and respawn
+    public void Respawn()
+    {
+        deathMenuAnim.SetTrigger("Hide");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+    }
 
     //save state
     /* what do we need to save?
