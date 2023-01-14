@@ -18,6 +18,5 @@ public class NPCText : Collidable
             GameManager.instance.ShowText(message, 14, Color.white, transform.position + new Vector3(0, 0.16f, 0), Vector3.zero, cooldown);
         }
 
-
     }
 }

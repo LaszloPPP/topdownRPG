@@ -70,6 +70,8 @@ public class Enemy : Mover
                 collidingWithPlayer = true;
             }
 
+
+
             //the array is not cleaned up ever time. clean up
             hits[i] = null;
         }
@@ -78,8 +80,17 @@ public class Enemy : Mover
 
     protected override void Die()
     {
+        if (gameObject.name == "Fireball")
+        {
+            gameObject.SetActive(false);
+            GameManager.instance.GrantXp(xpValue);
+            GameManager.instance.ShowText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
+        }
+
         Destroy(gameObject);
         GameManager.instance.GrantXp(xpValue);
         GameManager.instance.ShowText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
+
+
     }
 }
