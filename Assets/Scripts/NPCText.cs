@@ -6,19 +6,18 @@ public class NPCText : Collidable
 {
     public string message;
     private float cooldown = 4.0f;
-    private float lastShout=-4.0f;
+    private float lastShout = -4.0f;
 
-    
 
     protected override void OnCollide(Collider2D coll)
     {
+
         if (Time.time - lastShout > cooldown)
         {
             lastShout = Time.time;
-
-            //GameManager.instance.ShowText(message, 14, Color.white, GameObject.Find("test_npc").transform.position, Vector3.zero, cooldown);
             GameManager.instance.ShowText(message, 14, Color.white, transform.position + new Vector3(0, 0.16f, 0), Vector3.zero, cooldown);
-
         }
+
+
     }
 }

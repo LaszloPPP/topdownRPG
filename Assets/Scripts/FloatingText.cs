@@ -19,6 +19,8 @@ public class FloatingText
         go.SetActive(active);
     }
 
+    
+
     public void Hide()
     {
         active = false;

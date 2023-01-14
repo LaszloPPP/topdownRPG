@@ -35,11 +35,13 @@ public class FloatingTextManager : MonoBehaviour
         floatingText.txt.fontSize = fontSize;
         floatingText.txt.color = color;
         floatingText.go.transform.position = Camera.main.WorldToScreenPoint(position); //text is in world space, pixels, which is different coordinate system than
-        //the screenspoint (editor spaces coordinates). So convert came position to this to display correctly
+        //the screenspoint (editor spaces coordinates). So convert camera position to this to display correctly
         floatingText.motion = motion;
         floatingText.duration = duration;
         floatingText.Show();
     }
+
+    
     private FloatingText GetFloatingText()
     {
         FloatingText txt = floatingTexts.Find(t => !t.active);
