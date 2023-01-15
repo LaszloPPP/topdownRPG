@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 83610738208274680}
   - component: {fileID: 2569408217600387273}
   - component: {fileID: 6104134301358462872}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8976935611433455585}
   - component: {fileID: 5139224829737035711}
   - component: {fileID: 2470167283505048352}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: BubbleTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}

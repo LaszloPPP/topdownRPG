@@ -2890,7 +2890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &449275424
 Animator:
   serializedVersion: 4
@@ -12942,7 +12942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1505999297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14993,7 +14993,7 @@ GameObject:
   - component: {fileID: 1762520316}
   - component: {fileID: 1762520315}
   - component: {fileID: 1762520314}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
