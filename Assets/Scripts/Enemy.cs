@@ -11,6 +11,10 @@ public class Enemy : Mover
     public float triggerLength = 1;
     public float chaseLength = 5;
     private bool chasing;
+    //OC
+    public bool canjump;
+    public float jumpTriggerLength;
+    //OC--
     private bool collidingWithPlayer;
     private Transform playerTransform;
     private Vector3 startingPosition;
@@ -20,12 +24,23 @@ public class Enemy : Mover
     private BoxCollider2D hitbox;
     private Collider2D[] hits = new Collider2D[10];
 
+    //OC
+    private Animator anim;
+    //OC--
+
     protected override void Start()
     {
         base.Start();
         playerTransform = GameManager.instance.player.transform;
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        //OC
+        anim = GetComponent<Animator>();
+        if (anim == null)
+        {
+            return;
+        }
+        
     }
 
     private void FixedUpdate()
@@ -39,7 +54,14 @@ public class Enemy : Mover
             }
             if (chasing)
             {
-                if (!collidingWithPlayer)
+                //OC
+                if (!collidingWithPlayer && canjump == true && Vector3.Distance(playerTransform.position, transform.position) < jumpTriggerLength)
+                {
+                    UpdateMotor((playerTransform.position - transform.position).normalized);
+                    Jump();
+                }
+                //OC--
+                else if (!collidingWithPlayer)
                 {
                     UpdateMotor((playerTransform.position - transform.position).normalized);
                 }
@@ -93,4 +115,10 @@ public class Enemy : Mover
 
 
     }
+    //OC
+    private void Jump()
+    {
+        anim.SetTrigger("Jump");
+    }
+    //OC--
 }

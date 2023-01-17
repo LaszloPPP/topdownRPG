@@ -8,7 +8,7 @@ public class managerNPCUI : MonoBehaviour
     private GameObject objPlayer;
     public Image prefabBubble;
     private Image bubble;
-    private Vector3 offset = new Vector3(0.16f, 0.2f, 0);
+    private Vector3 offset = new Vector3(0.16f, 0.2f, 0.1f);
 
     void Start()
     {

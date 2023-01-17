@@ -526,8 +526,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6352875007612978406, guid: d192b6fee7a0b4c4d9f7ea8b0028aad7, type: 3}
+      propertyPath: canjump
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352875007612978406, guid: d192b6fee7a0b4c4d9f7ea8b0028aad7, type: 3}
       propertyPath: xpValue
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6352875007612978406, guid: d192b6fee7a0b4c4d9f7ea8b0028aad7, type: 3}
+      propertyPath: jumpTriggerLength
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6352875007612978425, guid: d192b6fee7a0b4c4d9f7ea8b0028aad7, type: 3}
       propertyPath: m_RootOrder
@@ -6852,6 +6860,8 @@ MonoBehaviour:
   xpValue: 1
   triggerLength: 1
   chaseLength: 2
+  canjump: 0
+  jumpTriggerLength: 0
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -7160,9 +7170,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1505565872}
   - component: {fileID: 1505565871}
-  - component: {fileID: 1505565870}
   - component: {fileID: 1505565873}
   - component: {fileID: 1505565874}
+  - component: {fileID: 1505565875}
   m_Layer: 9
   m_Name: EarthBoss
   m_TagString: Fighter
@@ -7170,40 +7180,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1505565870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1505565869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c4dbafecf5d1db4aa56fe6acdf3cf5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoint: 10
-  maxHitPoint: 10
-  pushRecoverySpeed: 0.2
-  ySpeed: 0.5
-  xSpeed: 0.6
-  xpValue: 1
-  triggerLength: 1
-  chaseLength: 2
-  filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!212 &1505565871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7319,6 +7295,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1505565875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505565869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c010d31ba9f3c8d4889f7d9233b23943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoint: 10
+  maxHitPoint: 10
+  pushRecoverySpeed: 0.2
+  ySpeed: 0.75
+  xSpeed: 1
+  xpValue: 1
+  triggerLength: 1
+  chaseLength: 2
+  canjump: 1
+  jumpTriggerLength: 0.4
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!1 &1614961157
 GameObject:
   m_ObjectHideFlags: 0
