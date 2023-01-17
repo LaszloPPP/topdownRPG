@@ -55,16 +55,28 @@ public class Enemy : Mover
             if (chasing)
             {
                 //OC
+                if (!collidingWithPlayer)
+                {
+                    UpdateMotor((playerTransform.position - transform.position).normalized);
+                    if (canjump == true && Vector3.Distance(playerTransform.position, transform.position) < jumpTriggerLength)
+                    {
+                        Jump();
+                    }
+                }
+                /*
                 if (!collidingWithPlayer && canjump == true && Vector3.Distance(playerTransform.position, transform.position) < jumpTriggerLength)
                 {
                     UpdateMotor((playerTransform.position - transform.position).normalized);
-                    Jump();
+                    //Jump();
                 }
+                */
                 //OC--
-                else if (!collidingWithPlayer)
+                /*
+                if (!collidingWithPlayer)
                 {
                     UpdateMotor((playerTransform.position - transform.position).normalized);
                 }
+                */
             }
             else
             {

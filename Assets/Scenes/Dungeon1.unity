@@ -7313,7 +7313,7 @@ MonoBehaviour:
   ySpeed: 0.75
   xSpeed: 1
   xpValue: 1
-  triggerLength: 1
+  triggerLength: 2
   chaseLength: 2
   canjump: 1
   jumpTriggerLength: 0.4
