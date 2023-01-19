@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : Mover
+public class Enemy2 : Mover
 {
     //experience
     public int xpValue = 1;
@@ -24,7 +24,9 @@ public class Enemy : Mover
     private BoxCollider2D hitbox;
     private Collider2D[] hits = new Collider2D[10];
 
-    
+    //OC
+    private Animator anim;
+    //OC--
 
     protected override void Start()
     {
@@ -32,8 +34,13 @@ public class Enemy : Mover
         playerTransform = GameManager.instance.player.transform;
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
-        
-        
+        //OC
+        anim = GetComponent<Animator>();
+        if (anim == null)
+        {
+            return;
+        }
+
     }
 
     private void FixedUpdate()
@@ -47,10 +54,15 @@ public class Enemy : Mover
             }
             if (chasing)
             {
-                
+                //OC
                 if (!collidingWithPlayer)
                 {
                     UpdateMotor((playerTransform.position - transform.position).normalized);
+                    
+                    if (Vector3.Distance(playerTransform.position, transform.position) < 0.2f)
+                    {
+                        Slam();
+                    }
                 }
                 
             }
@@ -103,5 +115,15 @@ public class Enemy : Mover
 
 
     }
-    
+    //OC
+    private void Jump()
+    {
+        anim.SetTrigger("Jump");
+    }
+
+    private void Slam()
+    {
+        anim.SetTrigger("Slam");
+    }
+    //OC--
 }
