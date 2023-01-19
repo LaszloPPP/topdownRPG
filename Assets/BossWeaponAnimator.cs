@@ -8,8 +8,9 @@ public class BossWeaponAnimator : MonoBehaviour
 {
     private GameObject objPlayer;
     private Animator anim;
-    private float cooldown = 0.5f;
+    private float cooldown = 1.5f;
     private float lastSwing;
+    public float bossSwingDistance=0.25f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class BossWeaponAnimator : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(transform.position, objPlayer.transform.position);
-        if (dist <= 0.2f)
+        if (dist <= bossSwingDistance)
         {
             if (Time.time - lastSwing > cooldown)
             {

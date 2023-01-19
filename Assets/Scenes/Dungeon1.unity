@@ -957,7 +957,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.004228443, y: -0.028744668}
+  m_Offset: {x: 0.017473698, y: -0.028744668}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -968,7 +968,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18747872, y: 0.23826313}
+  m_Size: {x: 0.21396923, y: 0.23826313}
   m_EdgeRadius: 0
 --- !u!1 &495570490
 GameObject:
@@ -1029,8 +1029,8 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 1
-  pushForce: 3
+  damage: 2
+  pushForce: 0
 --- !u!61 &495570493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1044,7 +1044,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0005044639, y: 0.1866266}
+  m_Offset: {x: -0.013568461, y: 0.18621267}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1055,7 +1055,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09810275, y: 0.37108567}
+  m_Size: {x: 0.0699569, y: 0.37191352}
   m_EdgeRadius: 0
 --- !u!1 &596336496
 GameObject:
@@ -1070,9 +1070,9 @@ GameObject:
   - component: {fileID: 596336499}
   - component: {fileID: 596336498}
   - component: {fileID: 596336497}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boss_1
-  m_TagString: Untagged
+  m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1092,11 +1092,11 @@ MonoBehaviour:
   hitPoint: 10
   maxHitPoint: 10
   pushRecoverySpeed: 0.2
-  ySpeed: 0.75
-  xSpeed: 1
+  ySpeed: 0.2
+  xSpeed: 0.2
   xpValue: 1
   triggerLength: 1
-  chaseLength: 5
+  chaseLength: 3
   canjump: 0
   jumpTriggerLength: 0
   filter:
@@ -17383,7 +17383,7 @@ GameObject:
   - component: {fileID: 1882429972}
   - component: {fileID: 1882429971}
   - component: {fileID: 1882429970}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boss_weapon_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

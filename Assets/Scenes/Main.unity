@@ -13148,6 +13148,14 @@ MonoBehaviour:
   playerSprites:
   - {fileID: -216467234, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
   - {fileID: 2142664501, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
+  - {fileID: -839272717, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
+  - {fileID: 226963399, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
+  - {fileID: -759514786, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
+  - {fileID: -1954414421, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
+  - {fileID: 2019484766, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
+  - {fileID: 240141838, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
+  - {fileID: 595849425, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
+  - {fileID: 183920573, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
   weaponSprites:
   - {fileID: -1256082617, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
   - {fileID: 1771932696, guid: 95510c069a9f6b9479f2c49135ae9ecf, type: 3}
