@@ -1688,7 +1688,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1696,6 +1696,27 @@ TextureImporter:
       bones: []
       spriteID: 102af3b8c6ac4df4b890c26eba105a3e
       internalID: -1946194043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65a69623b6f35041a62826070e4da99
+      internalID: 2010481607
       vertices: []
       indices: 
       edges: []
@@ -1736,6 +1757,7 @@ TextureImporter:
       crate_2: 1903163542
       weapon_3: 490870223
       player_6: 2019484766
+      collider_small: 943758366
       torch_3: 1067979540
       crate_3: 1502264000
       wall_8: 843177170
@@ -1766,6 +1788,7 @@ TextureImporter:
       wall_6: 397961896
       player_4: -759514786
       player_5: -1954414421
+      enemy_2: 2010481607
       floor_8: 1604208541
       floor_11: -1309823974
       torch_7: -1388231725

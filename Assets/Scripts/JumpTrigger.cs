@@ -10,7 +10,7 @@ public class JumpTrigger : MonoBehaviour
     private Animator anim;
     private float cooldown = 1.5f;
     private float lastJump;
-    public float bossSwingDistance = 0.25f;
+    public float bossJumpDistance = 0.25f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class JumpTrigger : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(transform.position, objPlayer.transform.position);
-        if (dist <= bossSwingDistance)
+        if (dist <= bossJumpDistance)
         {
             if (Time.time - lastJump > cooldown)
             {
