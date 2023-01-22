@@ -25,6 +25,7 @@ public class Collidable : MonoBehaviour
             }
 
             OnCollide(hits[i]);
+            Debug.Log(hits[i].name);
 
             //the array is not cleaned up ever time. clean up
             hits[i] = null;
@@ -33,6 +34,7 @@ public class Collidable : MonoBehaviour
 
     protected virtual void OnCollide(Collider2D coll)
     {
+        Debug.Log(coll.name);
         Debug.Log("OnCollide was not implemented in " + this.name);
     }
 }

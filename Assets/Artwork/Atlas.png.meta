@@ -1721,6 +1721,363 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: dark_floor_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ab21f00e5e69242bb72da4abc65f59
+      internalID: -1977987864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09734e4b3d3fb46418fe0b8cc240ebe5
+      internalID: -777965502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f43e8060712c74eb47fb0d7420aafd
+      internalID: -1821916590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334122219193a844bb0ab59e327d078c
+      internalID: 2067638282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98948aecc84c31648989f05855ab2bcd
+      internalID: 342509132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f661642af64248140b9705b4e86abcb6
+      internalID: 296966130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78401d49ceaf1e74a90323f53e2d4a21
+      internalID: 1702818174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1368b9009e4041a45ae321de2d7c80c5
+      internalID: -1377230721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e742c87254b6eb45b216336086a2c5e
+      internalID: 784134297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c2310bc6f5cd94daa4741f5a87923b
+      internalID: 1274121988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f3a922c348f2647bc2d00b39b54ecc
+      internalID: 551187651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69b1d76d01716147876ce2c9799f99c
+      internalID: -60206463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8145e3733684949b9bbe57ce584c8c
+      internalID: -1114363899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39450cab60d0d04ab874bd98df7a7ec
+      internalID: -2005503659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed56d535ed6e634d8c4cecc0b3292c1
+      internalID: -1042365325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_floor_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2425373c636a8fc449bce56d13a30621
+      internalID: -485292039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375155c16837fa94b81d7a4083b9e604
+      internalID: -1467346266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1736,80 +2093,97 @@ TextureImporter:
       chest_0: -630102552
       stairs_0: -1064451418
       weapon_2: 1188485553
-      wall_0: 1179674658
       torch_0: 1424999457
+      healing_fountain_0: -1165790964
+      wall_3: -2132511358
+      healing_fountain_2: -317521360
+      dark_floor_2: -1821916590
+      torch_6: -188753343
+      crate_2: 1903163542
+      weapon_3: 490870223
+      collider_small: 943758366
+      dark_floor_9: 1274121988
+      floor_2: 2141347374
+      floor_10: -467043909
+      player_2: -839272717
+      chest_1: 300780066
+      enemy_0: -1718815502
+      weapon_5: -457730608
+      pillar_3: 225699838
+      floor_6: -618402517
+      floor_0: -970130417
+      weapon_0: -1256082617
+      enemy_1: 1648587965
+      pillar_4: -1913408118
+      weapon_1: 1771932696
+      player_8: 595849425
+      dark_floor_4: 342509132
+      torch_7: -1388231725
+      dark_floor_7: -1377230721
+      dark_floor_6: 1702818174
+      healing_fountain_1: 585942392
+      dark_floor_14: -1042365325
+      floor_9: -1342573131
+      floor_12: -462954438
+      stairs_2: 1040804692
+      floor_3: -1769288722
+      dark_floor_0: -1977987864
+      pillar_5: -1482519850
+      stairs_3: 2100135284
+      wall_7: 839454780
+      dark_floor_10: 551187651
+      boss_weapon_0: 4800525
+      crate_1: -1644572583
+      player_7: 240141838
+      dark_floor_15: -485292039
+      wall_0: 1179674658
+      enemy_3: -1467346266
       stairs_1: 1482439252
+      dark_floor_8: 784134297
       floor_7: 1513226864
       wall_1: 165105234
+      dark_floor_13: -2005503659
       floor_5: 2008789090
       boss_2: -1946194043
       pillar_2: 537941616
       torch_2: 679776501
       player_0: -216467234
       floor_4: -780577256
-      healing_fountain_0: -1165790964
-      wall_3: -2132511358
       wall_5: -1111590618
-      healing_fountain_2: -317521360
-      player_3: 226963399
       weapon_7: -96696632
-      torch_6: -188753343
-      crate_2: 1903163542
-      weapon_3: 490870223
+      player_3: 226963399
+      dark_floor_12: -1114363899
       player_6: 2019484766
-      collider_small: 943758366
       torch_3: 1067979540
       crate_3: 1502264000
       wall_8: 843177170
-      floor_2: 2141347374
-      floor_10: -467043909
       torch_4: -1107630953
-      chest_1: 300780066
-      enemy_0: -1718815502
+      dark_floor_11: -60206463
       boss_0: -564516803
-      player_2: -839272717
-      weapon_5: -457730608
-      pillar_3: 225699838
       menu_0: 343462216
-      floor_6: -618402517
       crate_0: 273006536
+      torch_1: 66514640
       wall_9: -948875852
       boss_1: -509897777
       torch_5: -238502858
-      torch_1: 66514640
-      floor_0: -970130417
       player_1: 2142664501
-      weapon_0: -1256082617
-      enemy_1: 1648587965
-      pillar_4: -1913408118
-      weapon_1: 1771932696
-      player_8: 595849425
+      enemy_2: 2010481607
       wall_2: -114117823
+      dark_floor_3: 2067638282
       wall_6: 397961896
       player_4: -759514786
       player_5: -1954414421
-      enemy_2: 2010481607
+      dark_floor_5: 296966130
       floor_8: 1604208541
       floor_11: -1309823974
-      torch_7: -1388231725
       player_9: 183920573
-      healing_fountain_1: 585942392
+      dark_floor_1: -777965502
       torch_8: 844709380
-      floor_9: -1342573131
       floor_1: 715535597
       wall_4: -2047138304
       weapon_4: -306815207
-      floor_12: -462954438
-      stairs_2: 1040804692
-      floor_3: -1769288722
-      pillar_5: -1482519850
-      stairs_3: 2100135284
       pillar_0: -1746073169
-      wall_7: 839454780
-      boss_weapon_0: 4800525
       weapon_6: -2033617980
-      crate_1: -1644572583
-      player_7: 240141838
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

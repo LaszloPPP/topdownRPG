@@ -12,12 +12,17 @@ public class Enemy : Mover
     public float chaseLength = 5;
     private bool chasing;
     //OC
+    /*
     public bool canjump;
     public float jumpTriggerLength;
+    */
     //OC--
     private bool collidingWithPlayer;
     private Transform playerTransform;
     private Vector3 startingPosition;
+
+    public bool fleeingType;
+    public bool wallTrap;
 
     //hitbox
     public ContactFilter2D filter;
@@ -38,7 +43,46 @@ public class Enemy : Mover
 
     private void FixedUpdate()
     {
-        //is the player in range?        
+        //is the player in range?
+        //wall fix?
+        if (wallTrap)
+        {
+            return;
+        }
+        //try fleeing
+        if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLength)
+        {
+            if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLength)
+            {
+                chasing = true;
+            }
+            if (chasing)
+            {
+
+                if (!collidingWithPlayer && !fleeingType)
+                {
+                    UpdateMotor((playerTransform.position - transform.position).normalized);
+                }
+                else if (!collidingWithPlayer && fleeingType)
+                {
+                    UpdateMotor((playerTransform.position + transform.position).normalized);
+                }
+
+            }
+            else
+            {
+                UpdateMotor(startingPosition - transform.position);
+            }
+
+        }
+        else
+        {
+            UpdateMotor(startingPosition - transform.position);
+            chasing = false;
+        }
+
+        //original chaser
+        /*
         if (Vector3.Distance(playerTransform.position, startingPosition) < chaseLength)
         {
             if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLength)
@@ -65,7 +109,8 @@ public class Enemy : Mover
             UpdateMotor(startingPosition - transform.position);
             chasing = false;
         }
-        
+        */
+
         //check for overlaps
         collidingWithPlayer = false;
         boxCollider.OverlapCollider(filter, hits);
