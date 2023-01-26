@@ -16,6 +16,19 @@ public class Fighter : MonoBehaviour
     //push
     protected Vector3 pushDirection;
 
+    //enemy damage animation test
+    /*
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+
+    }
+   
+    */
+    //enemy damage animation test-------
+
     //all "Fighter" (tag) can be damaged, and Die()
 
     protected virtual void ReceiveDamage(Damage dmg)
@@ -26,7 +39,10 @@ public class Fighter : MonoBehaviour
             hitPoint -= dmg.damageAmount;
             pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
 
-            GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.zero, 0.5f);
+            GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.up * 40, 0.5f);
+            //enemy damage animation test
+
+            //Damaged();
 
             if (hitPoint <= 0)
             {
@@ -37,8 +53,11 @@ public class Fighter : MonoBehaviour
     }
 
     protected virtual void Die()
-    { 
-    
-    }
+    {
 
+    }
+    public void Damaged()
+    {
+        //anim.SetTrigger("Damaged");
+    }
 }

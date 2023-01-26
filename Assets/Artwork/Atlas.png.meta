@@ -2066,7 +2066,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2074,6 +2074,384 @@ TextureImporter:
       bones: []
       spriteID: 375155c16837fa94b81d7a4083b9e604
       internalID: -1467346266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_hole_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6181455d4a9eb74468873db4a1a6b1f1
+      internalID: -262006914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_hole_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321a76c7a54aa3248bd24c4224aae2a9
+      internalID: -1448448881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_hole_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdfcd6bfa08a1a488e34cfbb1737314
+      internalID: 1440105984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_slime_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf9b1f427b3a964ea7bf607abb95fc1
+      internalID: -319403524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_duct_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d240c7a8e411f4c898d7f203dc11a0
+      internalID: -1885781859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_duct_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd607b6d6e9e5a40a6a1680b7bccd2b
+      internalID: -539639208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_flag_red
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614bfea0ca1420541bb62f34a87b3380
+      internalID: -543595915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_flag_green
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f295c0217062f4da4c80ea830f6e97
+      internalID: -1895691170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_flag_blue
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39080e6ed6697ad46a42354b69c867bd
+      internalID: -1247904142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_flag_yellow
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253f2baf130567e49a3d2b4d6c37e9d9
+      internalID: -650544840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_slime_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53168510e0aa684789f5cf151df753b
+      internalID: 195556293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_dent_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4dcdae8d512f3f4e8889f7ef428b883
+      internalID: -1810837834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_dent_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e252cf3481e75aa4c828df79dca03946
+      internalID: 280333311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nmy_sword_silver
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 193
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6f01c29ee048942883175714a850aa
+      internalID: 910816635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nmy_sword_gold
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 193
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d22905f412636b4699b734916a25582
+      internalID: -1782806525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nmy_sword_black
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 161
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f23b69a77f32eb4fbd27c74b3a7f515
+      internalID: 291819782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nmy_sword_green
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 161
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437710a0daac9a047b3dd9c1cba7a47a
+      internalID: -1713098266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nmy_sword_red
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 161
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8453411087f560f479f18e85bd61e5bd
+      internalID: 1001765376
       vertices: []
       indices: 
       edges: []
@@ -2103,6 +2481,7 @@ TextureImporter:
       weapon_3: 490870223
       collider_small: 943758366
       dark_floor_9: 1274121988
+      decor_hole_0: -262006914
       floor_2: 2141347374
       floor_10: -467043909
       player_2: -839272717
@@ -2110,13 +2489,17 @@ TextureImporter:
       enemy_0: -1718815502
       weapon_5: -457730608
       pillar_3: 225699838
+      nmy_sword_red: 1001765376
       floor_6: -618402517
       floor_0: -970130417
       weapon_0: -1256082617
+      decor_hole_2: 1440105984
       enemy_1: 1648587965
       pillar_4: -1913408118
       weapon_1: 1771932696
       player_8: 595849425
+      decor_flag_yellow: -650544840
+      decor_slime_0: -319403524
       dark_floor_4: 342509132
       torch_7: -1388231725
       dark_floor_7: -1377230721
@@ -2124,6 +2507,7 @@ TextureImporter:
       healing_fountain_1: 585942392
       dark_floor_14: -1042365325
       floor_9: -1342573131
+      decor_dent_0: -1810837834
       floor_12: -462954438
       stairs_2: 1040804692
       floor_3: -1769288722
@@ -2136,10 +2520,12 @@ TextureImporter:
       crate_1: -1644572583
       player_7: 240141838
       dark_floor_15: -485292039
+      decor_slime_1: 195556293
       wall_0: 1179674658
       enemy_3: -1467346266
       stairs_1: 1482439252
       dark_floor_8: 784134297
+      decor_flag_green: -1895691170
       floor_7: 1513226864
       wall_1: 165105234
       dark_floor_13: -2005503659
@@ -2147,6 +2533,7 @@ TextureImporter:
       boss_2: -1946194043
       pillar_2: 537941616
       torch_2: 679776501
+      nmy_sword_gold: -1782806525
       player_0: -216467234
       floor_4: -780577256
       wall_5: -1111590618
@@ -2160,6 +2547,7 @@ TextureImporter:
       torch_4: -1107630953
       dark_floor_11: -60206463
       boss_0: -564516803
+      decor_flag_red: -543595915
       menu_0: 343462216
       crate_0: 273006536
       torch_1: 66514640
@@ -2174,16 +2562,24 @@ TextureImporter:
       player_4: -759514786
       player_5: -1954414421
       dark_floor_5: 296966130
+      decor_flag_blue: -1247904142
+      decor_hole_1: -1448448881
       floor_8: 1604208541
+      nmy_sword_black: 291819782
       floor_11: -1309823974
       player_9: 183920573
       dark_floor_1: -777965502
       torch_8: 844709380
       floor_1: 715535597
       wall_4: -2047138304
+      decor_duct_0: -1885781859
       weapon_4: -306815207
+      decor_duct_1: -539639208
       pillar_0: -1746073169
+      decor_dent_1: 280333311
+      nmy_sword_silver: 910816635
       weapon_6: -2033617980
+      nmy_sword_green: -1713098266
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

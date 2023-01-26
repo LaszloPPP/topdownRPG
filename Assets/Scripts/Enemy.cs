@@ -24,6 +24,9 @@ public class Enemy : Mover
     public bool fleeingType;
     public bool wallTrap;
 
+    //enemy damage animation
+    //public Animator anim;
+
     //hitbox
     public ContactFilter2D filter;
     private BoxCollider2D hitbox;
@@ -37,6 +40,8 @@ public class Enemy : Mover
         playerTransform = GameManager.instance.player.transform;
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        //enemy damage animation
+        //anim = GetComponent<Animator>();
 
 
     }
@@ -150,4 +155,11 @@ public class Enemy : Mover
 
     }
 
+    //enemy damage animation
+    /*
+    public void Damaged()
+    {
+        anim.SetTrigger("Damaged");
+    }
+    */
 }

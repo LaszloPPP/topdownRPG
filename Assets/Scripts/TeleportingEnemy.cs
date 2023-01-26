@@ -23,6 +23,9 @@ public class TeleportingEnemy : Mover
     private Vector3 startingPosition;
     private Vector3 lastTeleportPosition;
 
+    //public Animator anim;
+
+
     //hitbox
     public ContactFilter2D filter;
     private BoxCollider2D hitbox;
@@ -37,6 +40,9 @@ public class TeleportingEnemy : Mover
         //startingPosition = transform.position;
         lastTeleportPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
+        //enemy damage animation
+        //anim = GetComponent<Animator>();
+
     }
 
     private void OnDrawGizmos()
@@ -136,4 +142,11 @@ public class TeleportingEnemy : Mover
 
 
     }
+    //enemy damage animation
+    /*
+    public void Damaged()
+    {
+        anim.SetTrigger("Damaged");
+    }
+    */
 }
