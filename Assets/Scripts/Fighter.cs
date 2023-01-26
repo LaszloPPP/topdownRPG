@@ -18,6 +18,9 @@ public class Fighter : MonoBehaviour
 
     //enemy damage animation test
     /*
+    private SpriteRenderer sr;
+    */
+    /*
     private Animator anim;
 
     private void Start()
@@ -26,6 +29,17 @@ public class Fighter : MonoBehaviour
 
     }
    
+    */
+    /*
+    private void Start()
+    {
+        if (sr = null)
+        {
+            return;
+        }
+        sr = GetComponent<SpriteRenderer>();
+
+    }
     */
     //enemy damage animation test-------
 
@@ -42,7 +56,8 @@ public class Fighter : MonoBehaviour
             GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.up * 40, 0.5f);
             //enemy damage animation test
 
-            //Damaged();
+            //sr.color = Color.red;
+
 
             if (hitPoint <= 0)
             {
