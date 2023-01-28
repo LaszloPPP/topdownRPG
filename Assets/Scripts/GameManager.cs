@@ -56,6 +56,11 @@ public class GameManager : MonoBehaviour
     public RectTransform xpBarExternal;
     public Text xpTextExternal;
 
+    //external gold
+    public Text gold;
+    public Text goldOutline;
+
+
     public Animator deathMenuAnim;
     public GameObject hud;
     public GameObject menu;
@@ -70,7 +75,13 @@ public class GameManager : MonoBehaviour
         floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
     }
 
-    
+    //
+    public void Update()
+    {
+        gold.text = "Gold: " + money;
+        goldOutline.text = "Gold: " + money;
+    }
+    //
 
     // upgrade weapon
     public bool TryUpgradeWeapon()
