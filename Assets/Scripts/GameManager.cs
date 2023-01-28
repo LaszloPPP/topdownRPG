@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//
+using UnityEngine.UI;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -21,6 +24,8 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
+        //
+        hitpointText.text = player.hitPoint.ToString();
         //SceneManager.sceneLoaded += OnSceneLoaded;
         //DontDestroyOnLoad(gameObject); - put in dontdestroy.cs
         //DontDestroyOnLoad(hitpointBar.gameObject); - put in dontdestroy.cs
@@ -37,6 +42,9 @@ public class GameManager : MonoBehaviour
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
     public RectTransform hitpointBar;
+    //--
+    public Text hitpointText;
+    //--
     public Animator deathMenuAnim;
     public GameObject hud;
     public GameObject menu;
@@ -76,6 +84,8 @@ public class GameManager : MonoBehaviour
     {
         float ratio = (float)player.hitPoint / (float)player.maxHitPoint;
         hitpointBar.localScale = new Vector3(1, ratio, 1);
+        //
+        hitpointText.text = player.hitPoint.ToString();
     }
 
     //experience system
