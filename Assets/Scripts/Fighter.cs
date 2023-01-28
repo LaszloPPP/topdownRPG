@@ -51,7 +51,7 @@ public class Fighter : MonoBehaviour
         {
             lastImmune = Time.time;
             hitPoint -= dmg.damageAmount;
-            pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
+            pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce*3.5f;
 
             GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.up * 40, 0.5f);
             //enemy damage animation test

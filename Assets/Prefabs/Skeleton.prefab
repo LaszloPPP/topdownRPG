@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6352875007612978427}
   - component: {fileID: 6352875007612978406}
   m_Layer: 9
-  m_Name: smallEnemy
+  m_Name: Skeleton
   m_TagString: Fighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
