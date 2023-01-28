@@ -13,6 +13,8 @@ public class CharacterMenu : MonoBehaviour
     public Image characterSelectionSprite, weaponSprite;
     public RectTransform xpBar;
 
+    
+
     //character selection
     public void OnArrowClick(bool right)
     {
@@ -79,7 +81,7 @@ public class CharacterMenu : MonoBehaviour
 
         if (currLevel == GameManager.instance.xpTable.Count) //check if at max xp level
         {
-            xpText.text = GameManager.instance.experience.ToString() + " total experience points";
+            xpText.text = GameManager.instance.experience.ToString() + " total experience points";               
             xpBar.localScale = Vector3.one;
         }
         else
@@ -92,7 +94,7 @@ public class CharacterMenu : MonoBehaviour
 
             float completionRatio= (float)currXpIntoLevel/(float)diff;
             xpBar.localScale = new Vector3(completionRatio, 1, 1);
-            xpText.text = currXpIntoLevel.ToString() + " / " + diff;
+            xpText.text = currXpIntoLevel.ToString() + " / " + diff;            
         }
         
     }

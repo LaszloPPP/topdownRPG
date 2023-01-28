@@ -26,6 +26,14 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += LoadState;
         //
         hitpointText.text = player.hitPoint.ToString();
+
+        //
+        if (experience == 0)
+        {
+            xpBarExternal.localScale = new Vector3(0, 1, 1);
+        }
+        //
+
         //SceneManager.sceneLoaded += OnSceneLoaded;
         //DontDestroyOnLoad(gameObject); - put in dontdestroy.cs
         //DontDestroyOnLoad(hitpointBar.gameObject); - put in dontdestroy.cs
@@ -41,10 +49,13 @@ public class GameManager : MonoBehaviour
     public Player player;
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
-    public RectTransform hitpointBar;
-    //--
+    public RectTransform hitpointBar;    
     public Text hitpointText;
-    //--
+
+    //external xp bar
+    public RectTransform xpBarExternal;
+    public Text xpTextExternal;
+
     public Animator deathMenuAnim;
     public GameObject hud;
     public GameObject menu;
@@ -79,6 +90,33 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    //xpBarExternal
+
+    public void OnXpChange()
+    {
+        int currLevel = GetCurrentLevel();
+
+        if (currLevel == xpTable.Count) //check if at max xp level
+        {
+            xpTextExternal.text = experience.ToString() + " total experience points";
+            xpBarExternal.localScale = Vector3.one;
+        }
+        
+        else
+        {
+            
+            int prevLevelXp = GetXpToLevel(currLevel - 1);
+            int currLevelXp = GetXpToLevel(currLevel);
+
+            int diff = currLevelXp - prevLevelXp;
+            int currXpIntoLevel = experience - prevLevelXp;
+
+            float completionRatio = (float)currXpIntoLevel / (float)diff;
+            xpBarExternal.localScale = new Vector3(completionRatio, 1, 1);
+            xpTextExternal.text = currXpIntoLevel.ToString() + " / " + diff;
+        }
+    }
+
     //healthbar
     public void OnHitPointChange()
     {
@@ -93,6 +131,8 @@ public class GameManager : MonoBehaviour
     {
         int currentLevel = 0;
         int add = 0;
+
+        
 
         while (experience >= add)
         {
@@ -124,6 +164,9 @@ public class GameManager : MonoBehaviour
     {
         int currLevel = GetCurrentLevel();
         experience += xp;
+        //
+        OnXpChange();
+        //
         if (currLevel < GetCurrentLevel())
         {
             OnLevelUp();
