@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FireDungeon.unity
     guid: 2b08146d503c6bb42a8ca7510e90450e
+  - enabled: 1
+    path: Assets/Scenes/MonsterDungeon.unity
+    guid: e5859676b77ca1644b9fe43853f5768a
   m_configObjects: {}

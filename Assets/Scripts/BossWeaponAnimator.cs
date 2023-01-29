@@ -34,6 +34,6 @@ public class BossWeaponAnimator : MonoBehaviour
 
     private void BossSwing()
     {
-        anim.SetTrigger("BossSwing");
+        anim.SetTrigger("Swing");
     }
 }
