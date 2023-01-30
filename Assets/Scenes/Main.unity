@@ -2536,6 +2536,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HammerBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 1385222258133882438, guid: 753c38f4b54a5064fbda2cff59c7ee33, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385222258133882439, guid: 753c38f4b54a5064fbda2cff59c7ee33, type: 3}
+      propertyPath: xSpeed
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1385222258133882439, guid: 753c38f4b54a5064fbda2cff59c7ee33, type: 3}
+      propertyPath: ySpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1385222258133882436, guid: 753c38f4b54a5064fbda2cff59c7ee33, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 753c38f4b54a5064fbda2cff59c7ee33, type: 3}

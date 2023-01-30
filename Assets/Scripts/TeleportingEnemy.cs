@@ -13,10 +13,13 @@ public class TeleportingEnemy : Mover
     private bool chasing;
 
     //teleport stuff
-    private float cooldown = 1.5f;
+    public  float cooldown = 1.5f;
     private float lastTeleport;
     public float teleportTriggerDistance = 0.25f;
     [SerializeField] Bounds teleportBounds;
+    //
+    public bool showsDistance = false;
+    //
 
     private bool collidingWithPlayer;
     private Transform playerTransform;
@@ -67,6 +70,12 @@ public class TeleportingEnemy : Mover
                 {
                     UpdateMotor((playerTransform.position - transform.position).normalized);
                     float dist = Vector3.Distance(transform.position, playerTransform.position);
+                    //
+                    if (showsDistance)
+                    {
+                        Debug.Log(dist);
+                    }
+                    //
                     if (dist <= teleportTriggerDistance)
                     {
                         if (Time.time - lastTeleport > cooldown)
