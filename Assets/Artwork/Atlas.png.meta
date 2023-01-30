@@ -2885,7 +2885,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2893,6 +2893,531 @@ TextureImporter:
       bones: []
       spriteID: 7b47fbd7bbfb2534692fa845c2b1d998
       internalID: -106211646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_0
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1896a8d24f17b428cb3305e33ba19d
+      internalID: 610621126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcf02e5e1fbc344eb23b37b2d1d87c0
+      internalID: -675205705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cd5d86eb63cd34b8d9fb11ea20458e
+      internalID: 672674708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9e7cfcec6103a4882c349a7b7065e2
+      internalID: 1795705433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c04858a68dd954386cbb1210da326a
+      internalID: 895253008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816823c56794f8d4d92eedb8b664ba86
+      internalID: 1963346820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_6
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29d1056a6760494ca6f112583fe6f92
+      internalID: -1268961422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_7
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f40bb1c39abef4cbc367b005e76087
+      internalID: 1528370785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c43ae36e4c60e943ae3097be24bd0c7
+      internalID: -161664156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_9
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cec0e6ae93dbd40b4ad3339dd12f93
+      internalID: 200546982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_10
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db6ce9aa3b7e3642b2ab7fb4bfe9a70
+      internalID: -1261622783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_11
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e81bd0d06cda374cb0e7e98849acd16
+      internalID: 16144990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_12
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2c50850336efd4191139acab8d4995
+      internalID: 702772341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c787f65b4b134340a625705001a2f1e
+      internalID: -539507314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_14
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329f0fa4f5f3d3540a0a8db04fd0d727
+      internalID: -440320692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8f05b809118f540865dc12342da9c9
+      internalID: -973409803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alt_floor_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8f06026646db24ab25c11165ed5bdb
+      internalID: 1032708760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_decor_0
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c555d7ac80fd5114396018171f805e44
+      internalID: 892617834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_decor_1
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8371b0e3e1470a4da3249af668772ac
+      internalID: 590102853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_decor_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aee6ec246f473145b835b77c5d70a40
+      internalID: 1921224504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_decor_3
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e07131fa6a7f4b48bdf660e82d7c412
+      internalID: -94949132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_decor_4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526e25ae8cd7f8140b635c6b61356d98
+      internalID: 444679927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_decor_5
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f09c8cb459ff84c940a9cfa909b62a
+      internalID: -968365917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_decor_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513ec58cdfcb2b741b36167195c48784
+      internalID: 1868796592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor_decor_7
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f409de16519bb94ab01a9e8981a2cf6
+      internalID: 958201006
       vertices: []
       indices: 
       edges: []
@@ -2915,6 +3440,7 @@ TextureImporter:
       stairs_0: -1064451418
       weapon_2: 1188485553
       torch_0: 1424999457
+      floor_decor_5: -968365917
       enemy_9: 708588620
       enemy_7: -1250160995
       healing_fountain_0: -1165790964
@@ -2925,6 +3451,7 @@ TextureImporter:
       enemy_knight_1: -880189378
       torch_6: -188753343
       crate_2: 1903163542
+      floor_decor_0: 892617834
       weapon_3: 490870223
       collider_small: 943758366
       dark_floor_9: 1274121988
@@ -2934,11 +3461,15 @@ TextureImporter:
       player_2: -839272717
       chest_1: 300780066
       enemy_0: -1718815502
+      floor_decor_3: -94949132
       weapon_5: -457730608
       pillar_3: 225699838
       nmy_sword_red: 1001765376
       floor_6: -618402517
+      alt_floor_12: 702772341
+      floor_decor_2: 1921224504
       floor_0: -970130417
+      alt_floor_11: 16144990
       weapon_0: -1256082617
       decor_hole_2: 1440105984
       enemy_1: 1648587965
@@ -2956,9 +3487,12 @@ TextureImporter:
       dark_floor_6: 1702818174
       healing_fountain_1: 585942392
       dark_floor_14: -1042365325
+      alt_floor_5: 1963346820
+      alt_floor_9: 200546982
       enemy_18: 821858798
       floor_9: -1342573131
       decor_dent_0: -1810837834
+      alt_floor_13: -539507314
       floor_12: -462954438
       stairs_2: 1040804692
       floor_3: -1769288722
@@ -2971,16 +3505,19 @@ TextureImporter:
       enemy_6: -642754480
       wall_7: 839454780
       dark_floor_10: 551187651
+      floor_decor_1: 590102853
       boss_weapon_0: 4800525
       enemy_10: -595591212
       crate_1: -1644572583
       player_7: 240141838
       dark_floor_15: -485292039
       decor_slime_1: 195556293
+      alt_floor_8: -161664156
       wall_0: 1179674658
       enemy_3: -1467346266
       stairs_1: 1482439252
       decor_flag_green: -1895691170
+      alt_floor_7: 1528370785
       dark_floor_8: 784134297
       floor_7: 1513226864
       wall_1: 165105234
@@ -2996,6 +3533,8 @@ TextureImporter:
       weapon_7: -96696632
       player_3: 226963399
       dark_floor_12: -1114363899
+      floor_decor_6: 1868796592
+      alt_floor_4: 895253008
       enemy_8: -24880004
       player_6: 2019484766
       enemy_knight_3: -986573725
@@ -3004,16 +3543,22 @@ TextureImporter:
       wall_8: 843177170
       torch_4: -1107630953
       dark_floor_11: -60206463
+      floor_decor_4: 444679927
+      alt_floor_14: -440320692
+      alt_floor_15: -973409803
       boss_0: -564516803
       decor_flag_red: -543595915
       menu_0: 343462216
+      alt_floor_0: 610621126
       crate_0: 273006536
       torch_1: 66514640
       wall_9: -948875852
       boss_1: -509897777
       torch_5: -238502858
       enemy_knight_0: -620986523
+      floor_decor_7: 958201006
       player_1: 2142664501
+      alt_floor_10: -1261622783
       hole: -106211646
       enemy_2: 2010481607
       wall_2: -114117823
@@ -3026,15 +3571,19 @@ TextureImporter:
       enemy_17: 284279906
       decor_hole_1: -1448448881
       floor_8: 1604208541
+      alt_floor_3: 1795705433
       nmy_sword_black: 291819782
       floor_11: -1309823974
       player_9: 183920573
       dark_floor_1: -777965502
+      alt_floor_6: -1268961422
       torch_8: 844709380
       floor_1: 715535597
       wall_4: -2047138304
       decor_duct_0: -1885781859
       weapon_4: -306815207
+      alt_floor_16: 1032708760
+      alt_floor_2: 672674708
       decor_duct_1: -539639208
       pillar_0: -1746073169
       enemy_13: 236628976
@@ -3042,6 +3591,7 @@ TextureImporter:
       nmy_sword_silver: 910816635
       weapon_6: -2033617980
       nmy_sword_green: -1713098266
+      alt_floor_1: -675205705
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
