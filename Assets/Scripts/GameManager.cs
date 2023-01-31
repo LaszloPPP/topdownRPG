@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
 
 
     public Animator deathMenuAnim;
+    public Animator completeMenuAnim;
     public GameObject hud;
     public GameObject menu;
 
@@ -200,6 +201,9 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         deathMenuAnim.SetTrigger("Hide");
+        //
+        completeMenuAnim.SetTrigger("Hide");
+        //
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
         player.Respawn();
     }

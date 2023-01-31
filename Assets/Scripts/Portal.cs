@@ -6,6 +6,15 @@ public class Portal : Collidable
 
     protected override void OnCollide(Collider2D coll)
     {
+        //
+        if (coll.name == "Player" && gameObject.name == "FinalPortal")
+        {
+            GameManager.instance.completeMenuAnim.SetTrigger("Show");
+            return;
+        }
+
+        //
+
         if (coll.name == "Player")
         {
             //teleport the player
